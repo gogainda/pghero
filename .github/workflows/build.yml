@@ -8,6 +8,9 @@ jobs:
       fail-fast: false
       matrix:
         include:
+        - ruby: truffleruby-head
+          gemfile: Gemfile
+          postgres: 13
         - ruby: 3.0
           gemfile: Gemfile
           postgres: 13
